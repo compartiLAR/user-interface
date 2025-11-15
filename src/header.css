@@ -1,0 +1,88 @@
+/* src/Header.css */
+
+.main-header {
+  display: flex;
+  justify-content: space-between; /* Logo na esquerda, links na direita */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+}
+
+/* --- LOGO --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px; /* Altura do seu logo */
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* --- NAVEGAÇÃO / LINKS --- */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Espaçamento entre os links */
+}
+
+/* Estilo padrão de todos os links */
+.nav-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+/* Link de "destaque" (Cadastro) - usando seu verde */
+.nav-link-primary {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link-primary:hover {
+  background-color: #218838;
+  color: white; /* Garante que o texto fique branco */
+}
+
+/* Botão de "Sair" (Logout) - usando seu vermelho */
+.nav-button-logout {
+  background-color: transparent;
+  border: 1px solid #D8000C;
+  color: #D8000C;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-button-logout:hover {
+  background-color: #FFD2D2;
+  color: #D8000C;
+}

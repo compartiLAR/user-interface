@@ -1,0 +1,18 @@
+/* src/index.css */
+
+/* Remove margens e preenchimentos padrão do navegador */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  
+  /* Garante que o app ocupe 100% da altura */
+  height: 100%;
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #123f48;
+}
+
+/* Garante que o box-sizing não atrapalhe */
+* {
+  box-sizing: border-box;
+}
