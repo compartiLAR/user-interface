@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SignUpPage.css';
+import './signUpPage.css';
 //usados para autenticacao
 import { auth,db } from './firebaseConfig';
 import { createUserWithEmailAndPassword,sendEmailVerification } from "firebase/auth";
