@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './signUpPage.css';
 //usados para autenticacao
 import { auth,db } from './firebaseConfig';
-import { createUserWithEmailAndPassword,sendEmailVerification } from "firebase/auth";
+import { createUserWithEmailAndPassword,sendEmailVerification,signOut,updateProfile } from "firebase/auth";
 //usados para inserir os dados no Firestore
 import { setDoc, doc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
@@ -26,18 +26,12 @@ function SignUpPage(){
         try{
             //cria o autenticador do usuario no auth
             const userCredential = await createUserWithEmailAndPassword(auth,email,password);
-            const user = userCredential.user;
-            //a colecao em que o usuario vai ser colocado
-            const colecaoUsuarios = doc(db,"usuarios", user.uid)
-            //funcao para adicionar as informacoes do usuario
-            await setDoc(colecaoUsuarios,{
-                username:username,
-                email:user.email,
-                password:password,
-                dataCadastro:new Date()
+            
+            await updateProfile(userCredential.user, {
+                displayName: username // coloca o nome do usuario no auth;
             });
-
-            await sendEmailVerification(user);
+            await sendEmailVerification(userCredential.user);
+            await signOut(auth);
             navigate("/VerificationCode");
         }catch (err){
 

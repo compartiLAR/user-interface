@@ -9,7 +9,10 @@ function VerificationCode() {
   //Parte visual do site 
   return (
     <div className='login-container'>
-        <p>Um email de verificação foi enviado. Para prosseguir clique no link enviado antes de fazer login</p>
+        <div className='login-form'>
+            <p>Um email de verificação foi enviado. Para prosseguir clique no link enviado antes de fazer login</p>
+        </div>
+        
     </div>
   );
 }
