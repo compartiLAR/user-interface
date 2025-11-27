@@ -81,8 +81,9 @@
 /* Botão de "Sair" (Logout) - usando seu vermelho */
 .nav-button-logout {
   background-color: transparent;
-  border: 1px solid #D8000C;
-  color: #D8000C;
+  border: 1px solid #bb020b;
+  background-color: #D8000C;
+  color: #C3D3E8;
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1rem;
