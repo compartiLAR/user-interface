@@ -71,7 +71,6 @@ function LoginPage() {
         {error && <p className='erroTxt'>{error}</p>}
         
         <button type="submit" className="login-button">Entrar</button>
-        <button type="button" onClick={handleNavigate}></button>
       </form>
     </div>
   );

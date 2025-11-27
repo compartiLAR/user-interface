@@ -8,8 +8,8 @@ body, html, #root {
   /* Garante que o app ocupe 100% da altura */
   height: 100%;
   width: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #123f48;
+  font-family: Helvetica, 'Times New Roman', Times, serif;
+  background-color: #124147;
 }
 
 /* Garante que o box-sizing não atrapalhe */

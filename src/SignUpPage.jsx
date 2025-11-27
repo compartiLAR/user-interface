@@ -38,6 +38,7 @@ function SignUpPage(){
             });
 
             await sendEmailVerification(user);
+            navigate("/VerificationCode");
         }catch (err){
 
             if(err.code == "auth/email-already-in-use"){
@@ -50,6 +51,7 @@ function SignUpPage(){
                 setError("Email inválido");
             }else{
                 setError("Ocorreu um erro, tente novamente mais tarde");
+                console.log(err);
             }
         }
 
@@ -95,9 +97,7 @@ function SignUpPage(){
                     required 
                 />
                 </div>
-                
-                <button type="submit" className="signup-button">Entrar</button>
-                <button type="button" onClick={handleNavigate}></button>
+                <button type="submit" className="signup-button">Enviar</button>
             </form>
     </div>
     )

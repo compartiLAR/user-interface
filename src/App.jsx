@@ -2,6 +2,7 @@
 import React,{useEffect, useState} from 'react';
 import LoginPage from './LoginPage.jsx'; // Importa a pagina de login
 import SignUpPage from './SignUpPage.jsx'; // Importa a pagina de cadastro
+import VerificationCode from './VerificationCode.jsx'; // Importa a pagina do codigo de verificacao
 import HomePage from './homePage.jsx'; //Importa a homePage
 import { Route,Routes } from 'react-router-dom';
 import Nav from './header.jsx';
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage/>}/>
         <Route path="/SignUpPage" element={<SignUpPage/>}/>
+        <Route path="/VerificationCode" element={<VerificationCode/>}/>
         <Route path="/HomePage" element={<HomePage user ={user}/>}/>
       </Routes>
       {/*<footer/>*/}

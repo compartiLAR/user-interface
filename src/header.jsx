@@ -22,8 +22,11 @@ function Nav({user}){
     <header className="main-header">
       <div className="logo-container">
          <img src={logo} alt="Logo do App" className="logo-img" />
-        <Link to={user ? "/HomePage" : "/"} className="logo-text">
-          MeuSite
+        <Link to={user ? "/HomePage" : "/"} className="logo-text-comeco">
+          Comparti
+        </Link> 
+        <Link to={user ? "/HomePage" : "/"} className="logo-text-fim" >
+          LAR
         </Link> 
       </div>{/*A logo do site, quando clica nela, se estiver logado leva para a pagina de usuario*/}
 

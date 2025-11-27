@@ -5,7 +5,7 @@
   justify-content: space-between; /* Logo na esquerda, links na direita */
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: #14484F;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   box-sizing: border-box; /* Garante que o padding não quebre o layout */
@@ -15,17 +15,25 @@
 .logo-container {
   display: flex;
   align-items: center;
+  margin: -10px;
 }
 
 .logo-img {
-  height: 40px; /* Altura do seu logo */
-  margin-right: 10px;
+  height: 60px; /* Altura do seu logo */
+  margin-right: 15px;
 }
 
-.logo-text {
+.logo-text-comeco {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #37D78D;
+  text-decoration: none;
+}
+
+.logo-text-fim {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F00976;
   text-decoration: none;
 }
 
@@ -39,7 +47,7 @@
 /* Estilo padrão de todos os links */
 .nav-link {
   text-decoration: none;
-  color: #555;
+  color: #C3D3E8;/*#C3D3E8*//*#37D78D*/
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem;
@@ -48,8 +56,8 @@
 }
 
 .nav-link:hover {
-  color: #000;
-  background-color: #f0f0f0;
+ color: #CCDCEC;
+ background-color: #124147;
 }
 
 /* Link de "destaque" (Cadastro) - usando seu verde */
@@ -57,15 +65,16 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #28a745;
+  background-color: #238636;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
+  border: 1px solid rgba(240, 246, 252, 0.1);
 }
 
 .nav-link-primary:hover {
-  background-color: #218838;
+  background-color: #2EA043;
   color: white; /* Garante que o texto fique branco */
 }
 
